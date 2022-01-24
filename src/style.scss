@@ -1,0 +1,133 @@
+// EXT. RES ---------------------------------------------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+// VARS -------------------------------------------------------------------------------------------
+
+$font-main: 'Neucha', cursive, sans-serif;
+$color-lima: #8BB61A;
+$color-white : #FFFFFF;
+$color-thunderbird: #b61a1a;
+$color-dusty-gray: #999999;
+$color-dove-gray: #666666;
+$color-cod-gray: #111111;
+$color-black: #000000;
+
+// RESET ------------------------------------------------------------------------------------------
+
+html,
+body,
+div,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+// LAYOUT + TYPO ----------------------------------------------------------------------------------
+
+body {
+    font-family: $font-main;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+header {
+    margin: 0 0 3rem 0;
+}
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+footer {
+    margin: 11rem 0 0 0;
+}
+
+a {
+    &:link,
+    &:visited {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+    }
+}
+
+.box {
+    display: inline-block;
+    vertical-align: text-top;
+    word-wrap: break-word;
+    max-width: 15rem;
+    padding: 1rem;
+    border-radius: .25rem;
+}
+
+// COLOR ------------------------------------------------------------------------------------------
+
+body {
+    color: $color-dusty-gray;
+    background-color: $color-black;
+}
+
+h1 {
+    color: $color-lima;
+
+    span {
+        color: $color-white;
+    }
+
+    &:hover {
+        color: $color-white;
+
+        span {
+            color: $color-lima;
+        }
+    }
+}
+
+a {
+    &:link,
+    &:visited {
+        color: $color-dove-gray;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-lima;
+        text-decoration-color: $color-white;
+    }
+}
+
+.box {
+    &:hover {
+        color: $color-white;
+        background-color: $color-cod-gray;
+
+        .love {
+            color: $color-thunderbird;
+        }
+    }
+}
