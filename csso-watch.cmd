@@ -6,7 +6,7 @@ SET outputFile="./dist/style.min.css"
 :: Usage:
 ::
 :: $ cd etrusci.org/
-:: $ ./csso_watch.cmd
+:: $ ./csso-watch.cmd
 
 csso ^
     --watch ^
