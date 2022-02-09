@@ -1,7 +1,7 @@
 @ECHO OFF
 
 SET input="./src/style.scss"
-SET output="./build/style.css"
+SET output="./tmp/style.css"
 
 :: Usage:
 ::
