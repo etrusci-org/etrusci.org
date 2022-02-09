@@ -1,6 +1,6 @@
 @ECHO OFF
 
-SET inputFile="./build/style.css"
+SET inputFile="./tmp/style.css"
 SET outputFile="./app/style.min.css"
 
 :: Usage:
