@@ -1,7 +1,7 @@
 @ECHO OFF
 
 SET inputFile="./tmp/style.css"
-SET outputFile="./app/style.min.css"
+SET outputFile="./app/res/style.min.css"
 
 :: Usage:
 ::
