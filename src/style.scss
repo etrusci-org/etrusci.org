@@ -1,6 +1,13 @@
 // EXT. RES ---------------------------------------------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@font-face {
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('neucha-v15-latin-regular.woff2') format('woff2'),
+         url('neucha-v15-latin-regular.woff') format('woff');
+}
 
 // VARS -------------------------------------------------------------------------------------------
 
