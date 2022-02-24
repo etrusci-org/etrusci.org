@@ -128,13 +128,15 @@ a {
     }
 }
 
-.box {
-    &:hover {
-        color: $color-white;
-        background-color: $color-cod-gray;
+main {
+    div {
+        &:hover {
+            color: $color-white;
+            background-color: $color-cod-gray;
 
-        .love {
-            color: $color-thunderbird;
+            .love {
+                color: $color-thunderbird;
+            }
         }
     }
 }
