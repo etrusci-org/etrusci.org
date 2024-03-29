@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="application-name" content="etrusci.org">
+    <meta name="author" content="arT2">
+    <meta name="generator" content="Brain">
+    <meta name="description" content="Portal to arT2's brainstew.">
+    <meta name="keywords" content="etrusci, arT2, SPARTALIEN, lowtechman, multimedia, art, music, audio, visual, code, experimental, artist">
+
+    <meta property="og:title" content="[E(T]RU){SCI}">
+    <meta property="og:url" content="https://etrusci.org">
+    <meta property="og:description" content="portal to some of arT2's brainstew">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://etrusci.org/ogp.png">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./etrusci.css">
+
+    <title>[E(T]RU){SCI} :: portal to some of arT2's brainstew :: etrusci.org</title>
+</head>
+<body>
+    <main>
+        <h1>[E(T]RU){SCI}</h1>
+
+        <ul>
+            <li><a href="https://spartalien.com" target="_blank">original music and visuals</a></li>
+            <li><a href="https://mixcloud.com/lowtechman" target="_blank">dj mixes</a></li>
+            <li><a href="https://www.youtube.com/playlist?list=PLIfP3a7Gq08B4y7phHDGXPvJ5stvj4VoW" target="_blank">sky recorder archive</a></li>
+            <li><a href="https://etrusci.org/tool" target="_blank">nifty tools</a></li>
+            <li><a href="https://etrusci.org/play" target="_blank">weird games</a></li>
+            <li><a href="https://kultura.art/artists/2970/art2" target="_blank">kultura profile</a></li>
+            <li><a href="https://github.com/etrusci-org" target="_blank">github profile</a></li>
+            <li><a href="https://www.last.fm/user/SPARTALIEN" target="_blank">last.fm profile</a></li>
+        </ul>
+
+        <div class="nfo">
+            last update: 2024-03-29<br>
+            [<a data-scur="61|69|48|77|50|77|68|79|49|69|122|77|119|48|67|90|52|81|50|78|116|81|106|89|116|69|106|90|105|90|109|89|122|77|50|77|116|69|68|74|108|66|106|89|116|81|122|89|120|103|84|76|53|89|87|89|108|49|67|77|122|77|84|89|51|73|87|89|107|104|110|89|49|99|84|78|116|89|84|89|116|107|122|78|116|107|84|90|104|108|122|89|52|89|71|79|116|73|122|78|122|77|87|76|48|69|109|78|51|48|105|89|53|73|106|77|116|73|109|77|97|74|84|77|51|73|106|78|119|56|86|89|104|90|106|89|116|85|109|89|116|81|106|77|109|70|50|89|51|73|84|89|52|73|109|77|52|48|87|89|112|120|71|100|118|112|84|89|121|82|108|77|65|82|87|100|106|116|109|76|106|57|87|98">contact</a><noscript> (javascript required)</noscript>]
+        </div>
+    </main>
+
+
+    <script>
+        class Scur {
+            s = 'A36385130-d8d7-4b-1fbfb3c3-1$e0b-4c18-9fae-033a7badxb575-6a-97-9ea9c8f8-273c-4a67-b922-b2Z217260_aa6b-eb-42fac72a8b28';
+
+            deob(data) {
+                const dump = [];
+                data.split('|').forEach((v) => {
+                    dump.push(String.fromCharCode(parseInt(v)));
+                });
+                const text = this.#_r(atob(this.#_r(dump.join(''))));
+                if (text.indexOf(this.s) == -1) {
+                    console.error('Invalid or missing salt');
+                    return data;
+                }
+                return text.replace(this.s, '');
+            }
+
+            autodeob() {
+                const nodeList = document.querySelectorAll('[data-scur]');
+                nodeList.forEach(node => {
+                    if (node instanceof HTMLElement
+                        && node.dataset['scur'] !== undefined) {
+                        if (node instanceof HTMLAnchorElement) {
+                            node.setAttribute('href', this.deob(node.dataset['scur']));
+                        }
+                        else {
+                            node.innerHTML = this.deob(node.dataset['scur']);
+                        }
+                        delete node.dataset['scur'];
+                    }
+                });
+            }
+
+            #_r(data) {
+                return data.split('').reverse().join('');
+            }
+        }
+
+        window.addEventListener('load', () => {
+            new Scur().autodeob()
+        }, false)
+    </script>
+</body>
+</html>
