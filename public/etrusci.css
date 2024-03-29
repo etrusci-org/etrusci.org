@@ -1,6 +1,6 @@
 html, body,
 main, footer,
-h1, ul, li
+h1, ul, li, p,
 span, a {
     font-size: inherit;
     margin: 0;
