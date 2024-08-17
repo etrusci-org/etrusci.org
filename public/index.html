@@ -18,7 +18,7 @@
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="./etrusci.css">
+    <link rel="stylesheet" href="./etrusci.css?v=20240817-0">
 
     <title>[E(T]RU){SCI} :: portal to some of arT2's brainstew :: etrusci.org</title>
 </head>
@@ -32,7 +32,7 @@
 
         <ul>
             <li><a href="https://spartalien.com" target="_blank">spartalien.com</a></li>
-            <li><a href="https://sky.etrusci.org" target="_blank">sky recorder</a></li>
+            <li><a href="https://sky.etrusci.org" target="_blank">skyrecorder</a></li>
             <li><a href="https://etrusci.org/tool" target="_blank">tools</a></li>
             <li><a href="https://etrusci.org/play" target="_blank">games</a></li>
             <li><a href="https://mixcloud.com/lowtechman" target="_blank">@mixcloud</a></li>
@@ -41,54 +41,15 @@
             <li><a href="https://github.com/etrusci-org" target="_blank">@github</a></li>
         </ul>
 
+        <div class="ourspace_webring_widget"></div>
+
         <p class="nfo">
-            last update: 2024-06-16<br>
+            last update: 2024-08-17<br>
             [<a data-scur="61|69|48|77|50|77|68|79|49|69|122|77|119|48|67|90|52|81|50|78|116|81|106|89|116|69|106|90|105|90|109|89|122|77|50|77|116|69|68|74|108|66|106|89|116|81|122|89|120|103|84|76|53|89|87|89|108|49|67|77|122|77|84|89|51|73|87|89|107|104|110|89|49|99|84|78|116|89|84|89|116|107|122|78|116|107|84|90|104|108|122|89|52|89|71|79|116|73|122|78|122|77|87|76|48|69|109|78|51|48|105|89|53|73|106|77|116|73|109|77|97|74|84|77|51|73|106|78|119|56|86|89|104|90|106|89|116|85|109|89|116|81|106|77|109|70|50|89|51|73|84|89|52|73|109|77|52|48|87|89|112|120|71|100|118|112|84|89|121|82|108|77|65|82|87|100|106|116|109|76|106|57|87|98">contact</a><noscript> (javascript required)</noscript>]
         </p>
     </main>
 
-
-    <script>
-        class Scur {
-            s = 'A36385130-d8d7-4b-1fbfb3c3-1$e0b-4c18-9fae-033a7badxb575-6a-97-9ea9c8f8-273c-4a67-b922-b2Z217260_aa6b-eb-42fac72a8b28'
-
-            deob(data) {
-                const dump = []
-                data.split('|').forEach((v) => {
-                    dump.push(String.fromCharCode(parseInt(v)))
-                })
-                const text = this.#_r(atob(this.#_r(dump.join(''))))
-                if (text.indexOf(this.s) == -1) {
-                    console.error('Invalid or missing salt')
-                    return data
-                }
-                return text.replace(this.s, '')
-            }
-
-            autodeob() {
-                const nodeList = document.querySelectorAll('[data-scur]')
-                nodeList.forEach(node => {
-                    if (node instanceof HTMLElement
-                        && node.dataset['scur'] !== undefined) {
-                        if (node instanceof HTMLAnchorElement) {
-                            node.setAttribute('href', this.deob(node.dataset['scur']))
-                        }
-                        else {
-                            node.innerHTML = this.deob(node.dataset['scur'])
-                        }
-                        delete node.dataset['scur']
-                    }
-                })
-            }
-
-            #_r(data) {
-                return data.split('').reverse().join('')
-            }
-        }
-
-        window.addEventListener('load', () => {
-            new Scur().autodeob()
-        }, false)
-    </script>
+    <script src="./etrusci.js?v=20240817-0"></script>
+    <script src="https://ourspace.ch/widget.js/src:2"></script>
 </body>
 </html>
